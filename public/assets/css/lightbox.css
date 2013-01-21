@@ -1,0 +1,203 @@
+.lightbox_wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.85);
+  display: none;
+}
+
+.claim_box {
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -200px;
+  background: #fff;
+  z-index: 2;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.75);
+}
+
+.claim_box .image_row {
+  width: 100%;
+  height: 225px;
+  background: gray;
+  border-radius: 4px 4px 0 0;
+}
+
+.claim_box .image_row img {
+  display: block;
+  border-radius: 4px 4px 0 0;
+}
+
+.claim_box .context_row {
+  width: 100%;
+  height: 225px;
+  background: url(../images/bg-claim-box.jpg) repeat-x;
+  border-radius: 0 0 4px 4px;
+}
+
+.claim_box .publisher_box {
+  width: 63px;
+  height: 62px;
+  background: url(../images/logo-box.png) no-repeat;
+  position: absolute;
+  z-index: 9;
+  left: 50%;
+  top: 50%;
+  margin-left: -31px;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.claim_box .publisher_box img {
+  height: 26px;
+  max-width: 24px !important;
+  padding-top: 16px;
+}
+
+.claim_box h1 {
+  margin: 0;
+  padding: 35px 10px 10px;
+  background: url(../images/claim-divider.png) no-repeat center bottom;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  color: #666666;
+  margin-bottom: 15px;
+  font-family: 'Cutive', serif;
+}
+
+.claim_box .instruction_col,
+.claim_box .action_col {
+  width: 200px;
+  height: 120px;
+  text-align: center;
+  float: left;
+}
+
+.claim_box .instruction_col p {
+  padding: 10px 15px 15px;
+  margin: 0;
+  font-size: 12px;
+  text-align: left;
+  color: #888A8C;
+  text-shadow: 0 1px #fff;
+  font-family: 'Cutive', serif;
+}
+
+.lightbox_wrapper .shadow {
+  width: 620px;
+  height: 70px;
+  background: url(../images/shadow.png) no-repeat;
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+  top: 50%;
+  margin-top: 190px;
+  z-index: 1;
+}
+
+
+#process_completed.lightbox_wrapper .shadow {
+  margin-top: 75px;
+}
+
+
+.claim_box .cached_email {
+  font-size: 17px;
+  color: #565D63;
+}
+
+.claim_box .action_col {
+  width: 180px;
+  background: url(../images/bg-claim-section.png) no-repeat;
+}
+
+.claim_box .action_col p {
+  font-size: 9px;
+  color: #A4A7A9;
+  padding: 8px 0;
+}
+
+.claim_box .action_col p a {
+  color: #797B7D;
+  text-decoration: none;
+}
+
+.claim_box .action_col p a:hover {
+  text-decoration: underline;
+}
+
+.claim_box .button_claim {
+  width: 166px;
+  height: 50px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: url(../images/button-claim.png) no-repeat;
+}
+
+.claim_box .spark {
+  width: 150px;
+  height: 17px;
+  background: url(../images/spark.png) no-repeat;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -75px;
+}
+
+#request_email .mailbox {
+  border: 1px solid #296694;
+  background: url(../images/mail.png) no-repeat #fff;
+  background-position: 7px 7px;
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.35);
+  margin: 0 15px;
+  padding: 6px 0 6px 30px;
+  text-align: left;
+}
+
+#request_email .mailbox input {
+  width: 130px;
+  background: none !important;
+  border: none;
+  outline: none;
+}
+
+#process_completed .claim_box {
+  height: 225px !important;
+  margin-top: -112px !important;
+}
+
+.claim_box .completed_row {
+  width: 100%;
+  height: 225px;
+  background: #B9182C;
+  border-radius: 0 0 4px 4px;
+}
+
+#process_completed .thank_note {
+  font-family: 'Cutive', serif;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0,0,0,0.55);
+  padding-top: 84px;
+  line-height: 1.8em;
+}
+
+#process_completed .claim_box:before {
+  content: "";
+  width: 439px;
+  height: 238px;
+  position: absolute;
+  background: url(../images/ribbon.png) no-repeat;
+  top: -7px;
+  left: -34px;
+}
