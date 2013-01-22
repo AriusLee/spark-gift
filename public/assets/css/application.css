@@ -361,7 +361,8 @@ footer {
 
 footer .pull_right {
   font-style: italic;
-  color: #666;
+  color: #ccc;
+  opacity: 0.6;
   font-size: 10px;
   padding-top: 3px;
 }
@@ -407,6 +408,20 @@ footer .pull_right {
 
 #page_corner:hover {
   background: url(../images/corner-open.png) no-repeat right top;
+}
+
+#page_timer {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  z-index: 99;
+  text-shadow: 0 -1px #000;
+  font-size: 11px;
+  color: #ccc;
+}
+
+#page_timer i {
+  color: #fbbd5e;
 }
 
 /*
