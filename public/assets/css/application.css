@@ -201,11 +201,13 @@ section h1 {
 
 .gift_pane .left_col {
   border-radius: 4px 0 0 4px;
+  width: 180px;
 }
 
 .gift_pane .right_col {
   text-align: center;
   border-radius: 0 4px 4px 0;
+  width: 260px;
 }
 
 .gift_pane .left_col:after {
