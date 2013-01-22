@@ -104,7 +104,8 @@
 }
 
 
-#process_completed.lightbox_wrapper .shadow {
+#process_completed.lightbox_wrapper .shadow,
+#entrance.lightbox_wrapper .shadow {
   margin-top: 75px;
 }
 
@@ -170,19 +171,26 @@
   outline: none;
 }
 
-#process_completed .claim_box {
+.lightbox_wrapper#entrance {
+  display: block;
+}
+
+#process_completed .claim_box,
+#entrance .claim_box {
   height: 225px !important;
   margin-top: -112px !important;
 }
 
-.claim_box .completed_row {
+.claim_box .completed_row,
+.claim_box .welcome_row {
   width: 100%;
   height: 225px;
   background: #B9182C;
   border-radius: 0 0 4px 4px;
 }
 
-#process_completed .thank_note {
+#process_completed .thank_note,
+#entrance h1 {
   font-family: 'Cutive', serif;
   font-size: 14px;
   color: #fff;
@@ -192,7 +200,14 @@
   line-height: 1.8em;
 }
 
-#process_completed .claim_box:before {
+#entrance h1 {
+  padding-top: 50px;
+  background: none;
+  margin: 0;
+}
+
+#process_completed .claim_box:before,
+#entrance .claim_box:before {
   content: "";
   width: 439px;
   height: 238px;
@@ -200,4 +215,41 @@
   background: url(../images/ribbon.png) no-repeat;
   top: -7px;
   left: -34px;
+}
+
+#entrance .login_buttons {
+  z-index: 99;
+  position: relative;
+  width: 183px;
+  margin: 0 auto;
+}
+
+.login_buttons a,
+.login_buttons .textbox {
+  width: 183px;
+  height: 28px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.login_buttons a.login_fb {
+  background: url(../images/login-fb.png) no-repeat;
+}
+
+.login_buttons a.login_google {
+  background: url(../images/login-google.png) no-repeat;
+}
+
+.login_buttons .textbox {
+  background: url(../images/login-email.png) no-repeat;
+}
+
+.login_buttons .textbox input {
+  background: none;
+  border: none;
+  margin-top: 6px;
+  margin-left: 27px;
+  font-size: 11px;
+  width: 150px;
+  outline: none;
 }
