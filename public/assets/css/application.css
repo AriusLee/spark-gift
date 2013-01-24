@@ -178,7 +178,7 @@ section h1 {
 
 .gift_pane {
   width: 440px;
-  height: 160px;
+  height: 200px;
   float: left;
   margin-left: 20px;
   margin-bottom: 20px;
@@ -191,7 +191,7 @@ section h1 {
 .gift_pane .left_col,
 .gift_pane .right_col {
   width: 220px;
-  height: 160px;
+  height: 200px;
   overflow: hidden;
   float: left;
   background: #fff;
@@ -213,8 +213,8 @@ section h1 {
 .gift_pane .left_col:after {
   content: "";
   width: 7px;
-  height: 160px;
-  background: url(../images/shadow-left.png) no-repeat;
+  height: 200px;
+  background: url(../images/shadow-left.png) repeat-y;
   position: absolute;
   top: 0;
   right: 0;
@@ -223,21 +223,19 @@ section h1 {
 .gift_pane .right_col:after {
   content: "";
   width: 7px;
-  height: 160px;
-  background: url(../images/shadow-right.png) no-repeat;
+  height: 200px;
+  background: url(../images/shadow-right.png) repeat-y;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .gift_pane .left_col img {
-  min-width: 220px;
-  max-width: 250px;
-  min-height: 160px;
+  height: 200px;
 }
 
 .gift_pane .logo_row {
-  padding: 6px 0;
+  padding: 10px 0;
 }
 
 .gift_pane span.logo {
@@ -278,7 +276,7 @@ section h1 {
   color: #0071BC;
   font-size: 18px;
   line-height: 1em;
-  padding: 0 0 5px;
+  padding: 5px 0;
 }
 
 .gift_pane p {
